@@ -1,0 +1,30 @@
+body {
+  position: relative;
+  cursor: none;
+}
+.cursor,
+.follower {
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0; 
+  pointer-events: none;
+  cursor: none;
+}
+.cursor {
+  width: 8px;
+  height: 8px;
+  background-color: #d06666;
+  z-index: 1001;
+}
+.follower {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(204, 45, 45, 0.1);
+  transition: transform ease .1s;
+  text-align: center;
+  z-index: 1000;
+} 
